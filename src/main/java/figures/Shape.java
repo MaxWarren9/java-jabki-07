@@ -1,14 +1,15 @@
 package figures;
 
-import java.text.*;
-import java.util.*;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
 
 public abstract class Shape {
 
     public abstract double area();
 
     public void displayArea() {
-
+        System.out.println("Данный метод вычисляет площадь фигуры");
     }
 
     public double formatNumberToDecimal(double number) {

@@ -1,13 +1,27 @@
 package main;
 
-import figures.*;
-import files.*;
-import sound.*;
-import transport.*;
+import figures.Circle;
+import figures.Rectangle;
+import figures.Shape;
+import files.File;
+import files.ImageFile;
+import files.TextFile;
+import payment.CreditCardPayment;
+import playable.Playable;
+import playable.Song;
+import sound.AlarmClock;
+import sound.CarHorn;
+import sound.Dog;
+import sound.SoundEmitter;
+import transport.Airplane;
+import transport.Bicycle;
+import transport.Transport;
+
+import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) {
-        /*
+
         CreditCardPayment payment = new CreditCardPayment(BigDecimal.TEN);
         payment.validate();
         payment.process();
@@ -18,7 +32,7 @@ public class Main {
 
         Playable playable = new Song("Песня про весну!");
         playable.play();
-        */
+
         Shape[] shapes = new Shape[]{new Circle(5), new Rectangle(5, 4), new Circle(3), new Rectangle(2,3)};
 
         for (Shape shape: shapes) {
